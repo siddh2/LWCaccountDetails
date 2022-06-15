@@ -1,0 +1,28 @@
+<template>
+    
+
+    <template if:true={viewData}>
+
+        <template for:each={viewData} for:item="res">
+
+            <!--<p key={res.Id}>{res.Name}</p>-->
+            <table key={res.Id} class="table">
+                <tr>
+                  <th>Name</th>
+                  <th>Mobile Number</th>
+                  <th>Email</th>
+                </tr>
+                <tr>
+                  <td>{res.Name}</td>
+                  <td>{res.Phone}</td>
+                  <td>{res.Email}</td>
+                </tr>
+                
+              </table>
+              
+
+        </template>
+
+    </template>
+    
+</template>
